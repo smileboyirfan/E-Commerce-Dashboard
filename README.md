@@ -1,98 +1,70 @@
-E-Commerce Dashboard API
+# Getting Started with Create React App
 
-This is a backend API for an e-commerce application, built using Node.js, Express.js, and MongoDB. The API provides authentication, product management, and search functionality.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Features
+## Available Scripts
 
-User Registration & Login with JWT Authentication
+In the project directory, you can run:
 
-Product Management (Add, Update, Delete, Search)
+### `npm start`
 
-Middleware for Token Verification
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Technologies Used
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Node.js
+### `npm test`
 
-Express.js
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-MongoDB (Mongoose)
+### `npm run build`
 
-JSON Web Token (JWT)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-CORS
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-Dotenv
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Installation
+### `npm run eject`
 
-Clone the repository:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-git clone https://github.com/your-repo.git
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Navigate to the project directory:
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-cd e-commerce-api
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-Install dependencies:
+## Learn More
 
-npm install
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-Set up the environment variables in a .env file:
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-PORT=9000
-JWT_KEY=e-comm
-MONGO_URI=your-mongodb-connection-string
+### Code Splitting
 
-Usage
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-Start the server:
+### Analyzing the Bundle Size
 
-node app.js
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-The API will run on:
+### Making a Progressive Web App
 
-http://localhost:9000
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-API Endpoints
+### Advanced Configuration
 
-Authentication
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-POST /register - Register a new user
+### Deployment
 
-POST /login - Login user and get authentication token
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-Product Management
+### `npm run build` fails to minify
 
-POST /add-product - Add a new product (Protected)
-
-GET /product - Retrieve all products (Protected)
-
-GET /product/:id - Retrieve a specific product (Protected)
-
-PUT /product/:id - Update a product (Protected)
-
-DELETE /product/:id - Delete a product (Protected)
-
-Search
-
-GET /search/:key - Search for products (Protected)
-
-Middleware
-
-verifyToken - Ensures valid JWT token is provided in headers
-
-Folder Structure
-
-project-root/
-│── db/                # Database models
-│── public/            # Static files
-│── views/             # EJS templates
-│── app.js             # Main server file
-│── package.json       # Project metadata and dependencies
-│── .env               # Environment variables
-
-License
-
-This project is open-source and available under the MIT License.
-
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
